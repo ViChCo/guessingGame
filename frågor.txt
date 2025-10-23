@@ -1,0 +1,25 @@
+-Vad är pull repektive push? 
+Push skickar dina lokala commits och ändringar till fjärrepot.
+pull hämtar och ”mergar” ändringar från fjärrepot till din lokala repo. 
+Används för att uppdatera koden till den aktuella versionen. 
+
+-När använder man log respektive status?
+Log visar historiken av commits. 
+Status däremot visar den nuvarande tillståndet i arbetskatalogen. 
+Vilka filer som ändrades. Vilka som ligger i staging och om man är uppdaterad med remote repot.
+
+-Vad är en Git branch och varför är de viktiga? 
+Branch är olika grenar som sin kod är från main. Alltså seperata utvecklingslinjer. 
+Branch är viktiga eftersom man då kan testa ny kod utan att påverka master/main. 
+Detta gör att flera personer kan jobba parallellt med olika branches och lätt kan fixa buggar eller utveckla nya features. 
+
+-Det finns flera sätt att rulla tillbaka koden till ett tidigare tillstånd. Förklara skillnaden och motivera när man skulle använda den ena eller andra metoden. 
+Ge exempel på de kommandon du använder för att göra detta och vissa att det fungerar, vilken output du fick från git-kommandona.
+
+Git reset
+används innan man pushar och flyttar HEAD bakåt i historiken. Med reset kan man välja hur mycket man tar bort.
+soft, mixed och hard.
+
+Git revert 
+när man ångrar en commit, men vill behålla hela historiken. 
+det skapar alltså en ny commit som ”skriv över” et gamla commiten.
